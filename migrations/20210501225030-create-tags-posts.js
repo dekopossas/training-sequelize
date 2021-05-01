@@ -10,7 +10,8 @@ module.exports = {
       },
       postId: {
         type: Sequelize.INTEGER,
-        references: { model:'Posts', key:'id' }
+        references: { model:'Posts', key:'id' },
+        onDelete: 'CASCADE'
       },
       tagId: {
         type: Sequelize.INTEGER
