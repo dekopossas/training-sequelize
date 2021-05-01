@@ -9,7 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       postId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { model:'Posts', key:'id' }
       },
       tagId: {
         type: Sequelize.INTEGER
