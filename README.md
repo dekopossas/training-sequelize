@@ -5,7 +5,7 @@ Vídeo referente a revisão de sequelize do Thiago.
 
 efetuei esse passo a passo logo no inicio do projeto.
 
-´´´ bash
+``` bash
 ## npm init.
 npm init -y
 
@@ -26,4 +26,4 @@ npx sequelize model:generate --name Post --attributes title:STRING,content:TEXT
 
 ## Criando migrations e models de Tags
 npx sequelize model:generate --name Tag --attributes title:STRING
-´´´
+```
