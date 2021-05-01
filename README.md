@@ -26,4 +26,11 @@ npx sequelize model:generate --name Post --attributes title:STRING,content:TEXT
 
 ## Criando migrations e models de Tags
 npx sequelize model:generate --name Tag --attributes title:STRING
+
+## Criando uma tabela pivot
+npx sequelize model:generate --name tags_posts --attributes postId:INTEGER,tagId:INTEGER
+
 ```
+# Apague a model,
+
+Precisaremos apenas da migration.
