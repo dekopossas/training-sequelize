@@ -3,5 +3,13 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING
   });
 
+  Tag.associate = (models) => {
+    Post.belongToMany(models.Post, {
+      througth: 'tagsPosts',
+      as: 'tags',
+      foreignKey: 'postId',
+    })
+  }
+
   return Tag;
 };
