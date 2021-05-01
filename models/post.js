@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Post.associate = (models) => {
-    Post.belongToMany(models.Tag, {
+    Post.belongsToMany(models.Tag, {
       througth: 'tagsPosts',
       as: 'tags',
       foreignKey: 'postId',
