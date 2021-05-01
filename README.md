@@ -34,3 +34,9 @@ npx sequelize model:generate --name tags_posts --attributes postId:INTEGER,tagId
 # Apague a model,
 
 Precisaremos apenas da migration.
+
+Depois de editar todas as informaçoes:
+
+```bash
+npx sequelize db:migrate
+```
