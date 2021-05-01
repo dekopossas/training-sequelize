@@ -1,5 +1,5 @@
 const express = require('express');
-const { Addresses, Employees } = require('./models');
+const { posts, tags } = require('./models');
 
 const app = express();
 
