@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 
-const { posts, tags } = require('./models');
+const { Post, Tag } = require('./models');
 
 app.use(express.json());
 
 app.get('/posts', (_req, res) => {
   try {
-    const post = await Post.findAll({
+    const posts = await Post.findAll({
       include: [
         {
           model: Tag,
