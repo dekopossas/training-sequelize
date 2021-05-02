@@ -5,7 +5,7 @@ const { Post, Tag } = require('./models');
 
 app.use(express.json());
 
-app.get('/posts', (_req, res) => {
+app.get('/posts', async (_req, res) => {
   try {
     const posts = await Post.findAll({
       include: [
